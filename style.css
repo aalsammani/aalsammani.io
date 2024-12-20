@@ -1,62 +1,96 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     background: #f4f4f4;
     color: #333;
 }
 
-header {
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 25%;
     background: #0078D7;
     color: white;
-    padding: 20px 10px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-nav {
-    background: #333;
-    color: white;
-    overflow: hidden;
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
-nav ul {
+.sidebar h2 {
+    margin: 10px 0;
+}
+
+.contact-info {
     list-style: none;
-    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    margin: 20px 0;
 }
 
-nav ul li {
-    margin: 0;
+.contact-info li {
+    margin: 10px 0;
+    font-size: 0.9em;
 }
 
-nav ul li a {
+.contact-info a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
-    display: block;
 }
 
-nav ul li a:hover {
-    background: #575757;
-}
-
-section {
+/* Main Content Styles */
+.content {
+    width: 75%;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+}
+
+header {
+    border-bottom: 2px solid #0078D7;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.publication-list {
+    margin-top: 20px;
+}
+
+.publication {
     background: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.publication h2 a {
+    color: #0078D7;
+    text-decoration: none;
+}
+
+.publication h2 a:hover {
+    text-decoration: underline;
+}
+
+.publication p {
+    margin: 5px 0;
+}
+
+.publication a {
+    color: #0078D7;
+    text-decoration: none;
 }
